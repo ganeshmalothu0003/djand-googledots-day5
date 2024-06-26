@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .con {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .id1 {
+      height: 30px;
+      width: 30px;
+      background-color:blue;
+      border-radius: 80%;
+      animation: wave  0.3s 2s infinite alternate;
+      transition-timing-function: linear;
+    }
+    .id2 {
+        height: 30px;
+        width: 30px;
+      background-color: rgb(5, 247, 21);
+      border-radius: 50%;
+      animation: wave 0.4s 2s infinite alternate;
+      transition-timing-function: linear;
+    }
+
+    .id3 {
+        height: 30px;
+        width: 30px;
+      background-color: yellow;
+      border-radius: 50%;
+      animation: wave 0.5s 2s infinite alternate;
+      transition-timing-function: linear;
+    }
+    .id4 {
+        height: 30px;
+        width: 30px;
+      background-color: rgb(255, 0, 0);
+      border-radius: 50%;
+      animation: wave 0.6s 2s infinite alternate;
+      transition-timing-function: linear;
+    }
+    .id6{
+        background-color: aquamarine;
+        color: rgb(246, 6, 6);
+        width: 300px;
+        text-align: center;
+        transform: translateX(100px) translateY(300px);
+
+    }
+    @keyframes wave{
+        0%{
+            transform: translateX(0px) translateY(10px);
+        }
+        25%{
+            transform: translateX(0px) translateY(20px);
+        }
+        50%{
+            transform: translateX(0px) translateY(30px);
+        }
+        75%{
+            transform: translateX(0px) translateY(40px);
+        }
+        100%{
+            transform: translateX(0px) translateY(50px);
+        }
+
+    }
+</style>
+</head>
+<body>
+    <div class="con">
+        <div class="id6"><h1>Google DOTS</h1></div>
+        <div class="id1"></div>&nbsp;&nbsp;&nbsp;
+        <div class="id2"></div>&nbsp;&nbsp;&nbsp;
+        <div class="id3"></div>&nbsp;&nbsp;&nbsp;
+        <div class="id4"></div>
+    </div>
+  </body>
+</html>
